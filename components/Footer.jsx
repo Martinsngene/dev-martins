@@ -1,0 +1,94 @@
+import Link from "next/link";
+import { RiSendPlaneFill } from "react-icons/ri";
+import {
+  BsLinkedin,
+  BsTwitter,
+  BsFacebook,
+  BsInstagram,
+  BsWhatsapp,
+} from "react-icons/bs";
+const Footer = () => {
+  return (
+    <footer className="bg-[#1E2833] h-1/5 w-full text-white flex-col flex items-center justify-between p-8">
+      <div className="w-4/5 flex items-center justify-between">
+        <div className="newsLetter">
+          <div className="newsLetterHeader flex items-center justify-center text-[1.5rem]">
+            <h2 className="ml-12">
+              What more great content?
+              <br />
+              Subscribe!
+            </h2>
+          </div>
+          <div className="newsLetterField flex items-center justify-center">
+            <input
+              className="border-b bg-[#1E2833] border-[#E6E8E6] p-1 text-[#E6E8E6]"
+              type="text"
+              placeholder="Email address"
+            />
+            <button className="bg-[#FF8C42] text-[#E6E8E6] p-[0.58rem] rounded-t-md">
+              <RiSendPlaneFill />
+            </button>
+          </div>
+        </div>
+
+        <div className="navigationFooter">
+          <ul className="flex flex-col items-center justify-between text-[0.9rem]">
+            <li className="text-[#FF8C42]">Links</li>
+            <li>
+              <Link href={"/"}>Home</Link>
+            </li>
+            <li>
+              <Link href={"/"}>About</Link>
+            </li>
+            <li>
+              <Link href={"/"}>Contact</Link>
+            </li>
+            <li>
+              <Link href={"/"}>Articles</Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="w-4/5 flex items-center justify-between  mt-24">
+        <div className="footerTC ml-12 w-1/2 text-[0.9rem]">
+          <div className="w-1/2 flex items-center justify-between">
+            <span>Terms & Conditions</span>
+            <span>Privacy Policy</span>
+          </div>
+        </div>
+
+        <div className="socialLinks w-1/2">
+          <ul className="w-full flex items-center justify-end">
+            <li className="ml-8">
+              <a href={"/"}>
+                <BsLinkedin />
+              </a>
+            </li>
+            <li className="ml-8">
+              <a href={"/"}>
+                <BsTwitter />
+              </a>
+            </li>
+            <li className="ml-8">
+              <a href={"/"}>
+                <BsFacebook />
+              </a>
+            </li>
+            <li className="ml-8">
+              <a href={"/"}>
+                <BsInstagram />
+              </a>
+            </li>
+            <li className="ml-8">
+              <a href={"/"}>
+                <BsWhatsapp />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

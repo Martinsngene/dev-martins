@@ -4,7 +4,7 @@ import { Switch } from "@headlessui/react";
 const DarkmodeBtn = () => {
   const [enabled, setEnabled] = useState(false);
   return (
-    <div className="py-16">
+    <div>
       <Switch
         checked={enabled}
         onChange={setEnabled}

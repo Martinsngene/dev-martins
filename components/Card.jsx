@@ -1,6 +1,6 @@
 const Card = () => {
   return (
-    <div className="rounded-md shadow-lg bg-white max-w-[15rem] max-h-[15%]">
+    <div className="rounded-md shadow-lg bg-white max-w-[15rem] max-h-[15%] ">
       <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
         <img
           className="rounded-t-md"
