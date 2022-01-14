@@ -8,11 +8,39 @@ body {
   margin: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.outer {
+  padding: 1rem;
+  width: 100%;
+  height: 24rem;
+  display: flex;
+  white-space: nowrap;
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  background: white;
 }
 
-* {
-  box-sizing: border-box;
+.item {
+  /* height: 50%; */
+  /* border: 1px solid black; */
+  float: none;
+  zoom: 1;
+  white-space: pre-wrap;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: red;
 }

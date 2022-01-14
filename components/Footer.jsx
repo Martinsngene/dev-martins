@@ -9,7 +9,7 @@ import {
 } from "react-icons/bs";
 const Footer = () => {
   return (
-    <footer className="bg-[#1E2833] h-1/5 w-full text-white flex-col flex items-center justify-between p-8">
+    <footer className="bg-[#1E2833] h-1/5 w-full text-white flex-col flex items-center justify-between py-4 px-8">
       <div className="w-4/5 flex items-center justify-between">
         <div className="newsLetter">
           <div className="newsLetterHeader flex items-center justify-center text-[1.5rem]">
@@ -86,6 +86,9 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+      </div>
+      <div className="text-[0.7rem] mt-8">
+        <p>Copyright &copy; Martins Ngene, All rights reserved.</p>
       </div>
     </footer>
   );
