@@ -1,28 +1,26 @@
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
-import Test from "../components/Test";
 import HeroCarousel from "../components/HeroCarousel";
 import DisplayCard from "../components/DisplayCard";
-// import styles from "../styles/Home.module.css";
-// import dynamic from "next/dynamic";
-
-// const DynamicComponentWithNoSSR = dynamic(() => import("../components/Test"), {
-//   ssr: false,
-// });
+import CardContainer from "../components/CardContainer";
 
 export default function Home() {
   return (
     <div>
-      <NavBar />
-      <HeroCarousel/>
+      <div>
+        <NavBar />
+      </div>
+      <div>
+        <HeroCarousel />
+      </div>
       <div className="flex items-center justify-center p-6">
-        <div className="w-[75%]">
-          <DisplayCard/>
+        <div className="md:w-[80%]">
+          <DisplayCard />
         </div>
       </div>
-      <Test />
-      {/* <DynamicComponentWithNoSSR /> */}
-      <Footer />
+      <CardContainer postDate={"Recent Posts"} />
+      <CardContainer postDate={"More Articles"} />
+      {/* <Footer /> */}
     </div>
   );
 }
