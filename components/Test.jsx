@@ -1,52 +1,67 @@
-import React from "react";
-import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
+import React, { useEffect, useState, useRef } from "react";
+import { BsArrowLeftSquare, BsArrowRightSquare } from "react-icons/bs";
 import Card from "./Card";
 
 const Test = () => {
-  const ref = React.createRef();
+  const [scrollValue, setScrollValue] = useState(0);
 
-  const scroll = (scrollOffset) => {
-    ref.current.scrollLeft += scrollOffset;
+  const ref = useRef();
+
+  const scrollSection = () => {
+    ref.current.focus();
+
+    window.scrollTo({
+      left: 300,
+      behavior: "smooth",
+    });
+
+    // console.log("right");
+
+    // window.scrollTo({
+    //   right: 300,
+    //   behavior: "smooth",
+    // });
   };
+
+  // useEffect(() => {
+  //   window.addEventListener("click", scrollSection);
+
+  //   return () => {
+  //     window.removeEventListener("click", scrollSection);
+  //   };
+  // }, []);
+
   return (
-    // <div className="w-full bg-red-600 h-96 relative overflow-y-hidden overflow-x-auto px-12 py-4 flex whitespace-nowrap">
-    //   <button className="absolute  top-1/2 left-0">
-    //     <BsArrowLeftCircle size={"30px"} />
-    //   </button>
-    //   <button className="absolute top-1/2 right-0">
-    //     <BsArrowRightCircle size={"30px"} />
-    //   </button>
-    //   <Card />
-    //   <Card />
-    //   <Card />
-    //   <Card />
-    //   <Card />
-    // </div>
     <div>
-      <div className="outer">
-        <Card ref={ref} />
+      <div ref={ref} className="outer">
+        <Card />
 
-        <Card ref={ref} />
+        <Card />
 
-        <Card ref={ref} />
+        <Card />
 
-        <Card ref={ref} />
+        <Card />
 
-        <Card ref={ref} />
+        <Card />
 
-        <Card ref={ref} />
+        <Card />
 
-        <Card ref={ref} />
+        <Card />
 
-        <Card ref={ref} />
+        <Card />
 
-        <Card ref={ref} />
+        <Card />
 
-        <Card ref={ref} />
+        <Card />
       </div>
+
       <div>
-        <button onClick={() => scroll(-20)}>LEFT</button>
-        <button onClick={() => scroll(20)}>RIGHT</button>
+        <button onClick={scrollSection}>
+          <BsArrowLeftSquare size={"50px"} />
+        </button>
+        <button onClick={scrollSection}>
+          <BsArrowRightSquare size={"50px"} />
+        </button>
       </div>
     </div>
   );

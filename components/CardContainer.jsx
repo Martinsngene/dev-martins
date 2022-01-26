@@ -4,16 +4,18 @@ import styles from "../styles/CardContainer.module.css";
 
 const CardContainer = () => {
   return (
-    <div className={styles.DisplayCard}>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+    <div>
+      <div className={styles.DisplayCard}>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </div>
   );
 };
