@@ -13,7 +13,7 @@ const CardContainer = (props) => {
         </div>
         <div className="w-20 sm:flex items-center justify-between hidden ">
           <button
-            onClick={function () {
+            onClick={() => {
               ref.current.scrollLeft += -400;
             }}
           >
@@ -21,7 +21,7 @@ const CardContainer = (props) => {
           </button>
 
           <button
-            onClick={function () {
+            onClick={() => {
               ref.current.scrollLeft += 400;
             }}
           >

@@ -7,20 +7,12 @@ import CardContainer from "../components/CardContainer";
 export default function Home() {
   return (
     <div>
-      <div>
-        <NavBar />
-      </div>
-      <div>
-        <HeroCarousel />
-      </div>
-      <div className="flex items-center justify-center p-6">
-        <div className="md:w-[80%]">
-          <DisplayCard />
-        </div>
-      </div>
+      <NavBar />
+      <HeroCarousel />
+      <DisplayCard />
       <CardContainer postDate={"Recent Posts"} />
       <CardContainer postDate={"More Articles"} />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
