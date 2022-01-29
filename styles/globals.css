@@ -22,6 +22,8 @@ html {
   background: white;
 }
 
+/* Card Container */
+
 .outer {
   padding: 1rem;
   width: 100%;
@@ -41,3 +43,7 @@ html {
   zoom: 1;
   white-space: pre-wrap;
 }
+
+/* Card Container End */
+
+/* About Section */
