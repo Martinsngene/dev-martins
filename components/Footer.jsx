@@ -44,7 +44,7 @@ const Footer = () => {
               <Link href={"/"}>Contact</Link>
             </li>
             <li className="mb-4 md:-mb-0">
-              <Link href={"/"}>Articles</Link>
+              <Link href={"/"}>All posts</Link>
             </li>
           </ul>
         </div>

@@ -9,7 +9,7 @@ function CustomTextArea(props) {
           id={props.id}
           placeholder={props.placeholder}
           onChange={props.onchange}
-          className={`w-full h-20 outline-none font-bold ${props.className}`}
+          className={`w-full h-15 md:h-20 outline-none font-bold ${props.className}`}
         ></textarea>
       </div>
     </div>
