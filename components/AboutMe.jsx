@@ -8,7 +8,7 @@ function AboutMe() {
       <div className="grid grid-cols-1 md:grid-cols-2 w-[80%]">
         <div className="col-span-1 flex items-center justify-center">
           <div className="w-[80%] md:w-[80%] flex items-center justify-center border-2 border-[#FF8C42] rounded-lg p-2">
-            <Image src={AboutMeImage} width={700} height={400} />
+            <Image src={AboutMeImage} width={700} height={400} alt="" />
           </div>
         </div>
         <div className="col-span-1">
@@ -16,14 +16,14 @@ function AboutMe() {
             <h2 className="text-[2.3rem] text-[#FF8C42]">About Me</h2>
           </div>
           <div className="aboutMeBody">
-            <p className="text-[1.3rem]">
+            <p className="text-[1rem]">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
               voluptatum, repellat sint rerum delectus consectetur est, ad,
               debitis sunt provident error ipsa id. Iste id suscipit mollitia
               animi, quae vel.
             </p>
             <br />
-            <p className="text-[1.3rem]">
+            <p className="text-[1rem]">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
               voluptatum, repellat sint rerum delectus consectetur est, ad,
               debitis sunt provident error ipsa id. Iste id suscipit mollitia

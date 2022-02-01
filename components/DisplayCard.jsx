@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const DisplayCard = () => {
   return (
     <div className="flex items-center justify-center p-6">
@@ -5,8 +7,9 @@ const DisplayCard = () => {
         <div className="flex justify-center">
           <div className="flex flex-col md:flex-row-reverse bg-white w-full">
             <div className="w-full md:w-1/2 md:h-auto">
-              <img
-                className="w-full h-full"
+              <Image
+                width={900}
+                height={520}
                 src="https://images.unsplash.com/photo-1593642634443-44adaa06623a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
                 alt=""
               />

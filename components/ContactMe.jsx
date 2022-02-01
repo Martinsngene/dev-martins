@@ -14,19 +14,19 @@ function ContactMe() {
             <div className="w-full md:w-[70%]">
               <CustomInput
                 placeholder="Name"
-                className="border-[3px] border-[#FF8C42] p-2 md:p-4 rounded-lg bg-[#1E2833]"
+                className="border-[3px] border-[#FF8C42] p-1 md:p-3 rounded-lg bg-[#1E2833]"
               />
             </div>
             <div className="w-full md:w-[70%]">
               <CustomInput
                 placeholder="Email"
-                className="border-[3px] border-[#FF8C42] p-2 md:p-4 rounded-lg bg-[#1E2833]"
+                className="border-[3px] border-[#FF8C42] p-1 md:p-3 rounded-lg bg-[#1E2833]"
               />
             </div>
             <div className="w-full md:w-[70%]">
               <CustomTextArea
                 placeholder="Message"
-                className="border-[3px] border-[#FF8C42] p-2 md:p-4 rounded-lg bg-[#1E2833]"
+                className="border-[3px] border-[#FF8C42] p-1 md:p-3 rounded-lg bg-[#1E2833]"
               />
             </div>
             <div className="w-full md:w-[70%]">
@@ -40,19 +40,19 @@ function ContactMe() {
           <div className="contactMeForm w-full flex flex-col items-center justify-center">
             <div className="w-[70%]">
               <h2 className="text-[#FF8C42] text-[1.5rem]">Phone</h2>
-              <p className="text-[#fff] text-[1.2rem]">
+              <p className="text-[#fff] text-[0.9rem] md:text-[1rem]">
                 +234 808-587-8073, +234 806-321-0160
               </p>
             </div>
             <div className="w-[70%]">
               <h2 className="text-[#FF8C42] text-[1.5rem]">Email</h2>
-              <p className="text-[#fff] text-[1.2rem]">
+              <p className="text-[#fff] text-[0.9rem] md:text-[1rem]">
                 martinsngene@gmail.com
               </p>
             </div>
             <div className="w-[70%]">
               <h2 className="text-[#FF8C42] text-[1.5rem]">Address</h2>
-              <p className="text-[#fff] text-[1.2rem]">
+              <p className="text-[#fff] text-[0.9rem] md:text-[1rem]">
                 3 Asifor Lane Off Sokoh Estate Road Warri, Delta State, Nigeria
               </p>
             </div>
