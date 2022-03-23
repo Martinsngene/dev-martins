@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { BsArrowLeftSquare, BsArrowRightSquare } from "react-icons/bs";
 import Card from "./Card";
+import { CardMockData } from "./mock/CardMock";
 
 const CardContainer = (props) => {
   const ref = useRef();
@@ -30,25 +31,16 @@ const CardContainer = (props) => {
         </div>
       </div>
       <div style={{ scrollBehavior: "smooth" }} ref={ref} className="outer">
-        <Card />
-
-        <Card />
-
-        <Card />
-
-        <Card />
-
-        <Card />
-
-        <Card />
-
-        <Card />
-
-        <Card />
-
-        <Card />
-
-        <Card />
+        {CardMockData.map((item, index) => (
+          <Card
+            href={item.href}
+            key={index}
+            src={item.url}
+            buttonLabel={item.buttonLabel}
+          >
+            {item.description}
+          </Card>
+        ))}
       </div>
     </div>
   );

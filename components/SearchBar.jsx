@@ -1,20 +1,18 @@
 import React from "react";
-import { FiSearch } from "react-icons/fi";
 
-const SearchBar = () => {
+function SearchBar({ label, labelId, className, inputId, name }) {
   return (
-    <div className="relative border border-gray-400 p-2 bg-[#FAFAFA] rounded-full">
-      <div className=" flex">
-        <div className=" transform translate-y-1 ">
-          <FiSearch />
-        </div>
-        <input
-          className=" w-full ml-2 bg-[#FAFAFA] outline-none font-bold"
-          placeholder="Search"
-        />
-      </div>
+    <div className={className}>
+      <label className="text-[12px] text-[#555] font-[400]" htmlFor={labelId}>
+        {label}
+      </label>
+      <input
+        name={name}
+        id={inputId}
+        className="border border-[#555] py-[1rem] px-[0.6rem] rounded-[8px] mt-[1rem] w-full outline-none font-bold"
+      />
     </div>
   );
-};
+}
 
 export default SearchBar;

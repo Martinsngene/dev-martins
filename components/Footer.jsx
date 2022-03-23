@@ -21,11 +21,11 @@ const Footer = () => {
           </div>
           <div className="newsLetterField flex items-center justify-center">
             <input
-              className="border-b text-[0.9rem] bg-[#1E2833] border-[#E6E8E6] p-1 text-[#E6E8E6]"
+              className="border-b text-[0.9rem] bg-[#1E2833] border-[#E6E8E6] p-1 text-[#E6E8E6] outline-none"
               type="text"
               placeholder="Email address"
             />
-            <button className="bg-[#FF8C42] text-[#E6E8E6] p-[0.58rem] rounded-t-md">
+            <button className="bg-[#C2B7E1] text-[#E6E8E6] p-[0.58rem] rounded-t-md">
               <RiSendPlaneFill />
             </button>
           </div>
@@ -33,18 +33,21 @@ const Footer = () => {
 
         <div className="navigationFooter mt-8">
           <ul className="flex flex-col items-center justify-between text-[0.9rem]">
-            <li className="text-[#FF8C42] mb-4 md:-mb-0">Links</li>
+            <li className="text-[#C2B7E1] mb-4 md:-mb-0">Links</li>
             <li className="mb-4 md:-mb-0">
               <Link href={"/"}>Home</Link>
             </li>
             <li className="mb-4 md:-mb-0">
-              <Link href={"/"}>About</Link>
+              <Link href={"/"}>All posts</Link>
             </li>
             <li className="mb-4 md:-mb-0">
               <Link href={"/"}>Contact</Link>
             </li>
             <li className="mb-4 md:-mb-0">
-              <Link href={"/"}>All posts</Link>
+              <Link href={"/"}>About</Link>
+            </li>
+            <li className="mb-4 md:-mb-0">
+              <Link href={"/"}>Support</Link>
             </li>
           </ul>
         </div>

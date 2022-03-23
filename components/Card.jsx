@@ -1,38 +1,31 @@
 import Image from "next/image";
+import CustomLink from "./CustomLink";
+import { BsArrowRight } from "react-icons/bs";
 
-const Card = ({ ref }) => {
+const Card = ({ children, src, buttonLabel, link }) => {
   return (
-    <div ref={ref} className="h-[7rem] md:h-[9rem] w-[14rem] md:w-[18rem] mr-8">
-      <div className="rounded-md shadow-lg h-[7rem] md:h-[9rem] w-[14rem] md:w-[18rem] item">
-        <a>
-          <Image
-            className="rounded-t-md"
-            width={700}
-            height={350}
-            src="https://mdbootstrap.com/img/new/standard/nature/182.jpg"
-            alt=""
-          />
-        </a>
-        <div className="p-2">
-          <h5 className="text-gray-900 text-[1.2rem] font-medium mb-2">
-            Lorem Ipsum Dolo
+    <div className="w-[300px] md:w-[700px] mx-[1rem] border border-[#e3e3e3]">
+      <div className="h-[8rem] md:h-[350px] w-[300px] item">
+        <div>
+          <Image width={700} height={400} src={src} alt="" />
+        </div>
+        <div className="px-[0.5rem]">
+          <h5 className="text-gray-900 text-[1.2rem] font-[700] mb-1">
+            Hello World
           </h5>
-          <p className="text-gray-700 text-[0.8rem] mb-4">
-            Some quick example text to build on the card title and make up the
-            bulk of the cards content.
-          </p>
-          <div className="footer w-full flex items-center p-1 justify-between">
-            <div className="date text-[0.7rem]">
-              <p>May 11th 2022</p>
-            </div>
-
-            <div className="readMore">
-              <button
-                type="button"
-                className=" text-black font-bold text-[0.7rem]"
+          <p className="text-gray-700 mb-4">{children}</p>
+          <div className="footer w-full">
+            <div className="cardBtnContainer my-1 mx-1 flex items-center justify-between text-[0.8rem]">
+              <CustomLink
+                href={link}
+                textStyle="text-[#123384] font-[600] flex w-full items-center justify-between"
+                className="w-[25%] cursor-pointer"
               >
-                Read more
-              </button>
+                <span>{buttonLabel}</span>
+                <BsArrowRight />
+              </CustomLink>
+
+              <span>Mar 21, 2022</span>
             </div>
           </div>
         </div>
