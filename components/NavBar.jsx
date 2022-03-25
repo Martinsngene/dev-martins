@@ -15,9 +15,7 @@ const Navbar = () => {
         <div className="bg-[#fff] h-[4.5rem] fixed z-10 w-[100%] flex items-center justify-between px-[2rem] shadow-xl">
           <Link href={"/"} passHref={true}>
             <div className="logo flex items-center justify-center bg-[#C2B7E1] w-[60px] h-[55px] rounded-md">
-              <div className="logoContainer">
-                <Image src={MartinsLogo} width={50} height={25} alt="" />
-              </div>
+              <Image src={MartinsLogo} width={50} height={25} alt="" />
             </div>
           </Link>
 
@@ -37,8 +35,8 @@ const Navbar = () => {
       </div>
       <div className="md:hidden bg-[#fff] h-[4rem] fixed z-10 w-[100%] flex items-center justify-between px-[1rem] shadow-xl">
         <Link href={"/"} passHref={true}>
-          <div className="logo w-[50%] bg-[#C2B7E1]">
-            <Image src={MartinsLogo} width={50} height={25} alt="" />
+          <div className="logo flex items-center justify-center bg-[#C2B7E1] w-[50px] h-[45px] rounded-md">
+            <Image src={MartinsLogo} width={40} height={20} alt="" />
           </div>
         </Link>
         <div>

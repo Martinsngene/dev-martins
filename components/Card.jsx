@@ -2,7 +2,7 @@ import Image from "next/image";
 import CustomLink from "./CustomLink";
 import { BsArrowRight } from "react-icons/bs";
 
-const Card = ({ children, src, buttonLabel, link }) => {
+const Card = ({ children, src, buttonLabel, link, dateTime }) => {
   return (
     <div className="w-[300px] md:w-[700px] mx-[1rem] border border-[#e3e3e3]">
       <div className="h-[8rem] md:h-[350px] w-[300px] item">
@@ -25,7 +25,7 @@ const Card = ({ children, src, buttonLabel, link }) => {
                 <BsArrowRight />
               </CustomLink>
 
-              <span>Mar 21, 2022</span>
+              <span>{dateTime}</span>
             </div>
           </div>
         </div>

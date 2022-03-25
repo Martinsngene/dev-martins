@@ -6,13 +6,14 @@ const index = () => {
   return (
     <Layout>
       <div className="flex items-center justify-center px-[2rem] pt-[10rem] pb-[5rem]">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-[3rem]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-[3rem]">
           {CardMockData2.map((item, index) => (
             <Card2
               href={item.href}
               key={index}
               src={item.url}
               buttonLabel={item.buttonLabel}
+              dateTime={item.dateTime}
             >
               {item.description}
             </Card2>

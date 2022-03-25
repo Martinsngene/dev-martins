@@ -37,6 +37,7 @@ const CardContainer = (props) => {
             key={index}
             src={item.url}
             buttonLabel={item.buttonLabel}
+            dateTime={item.dateTime}
           >
             {item.description}
           </Card>

@@ -9,7 +9,7 @@ function Contact() {
   return (
     <Layout>
       <div className="grid grid-cols-1 px-[1rem] sm:grid-cols-2 gap-10 pt-[2rem] mb-[2rem]">
-        <div className="col-span-1 pt-[4rem]">
+        <div className="col-span-1 pt-[2rem] md:pt-[4rem] order-2 md:order-1">
           <div className="grid grid-cols-1 px-[1rem] sm:grid-cols-2 gap-10">
             <div className="col-span-1">
               <SearchBar
@@ -57,13 +57,13 @@ function Contact() {
           <div className="grid grid-cols-1 px-[1rem]">
             <CustomButton
               containerStyles="mt-[1rem]"
-              className="w-full bg-[#A06CD5] p-[0.5rem]"
+              className="w-full text-[0.7rem] md:text-[1rem] bg-[#A06CD5] p-[0.5rem]"
             >
               Submit
             </CustomButton>
           </div>
         </div>
-        <div className="col-span-1 flex items-center justify-center w-full pt-[2rem]">
+        <div className="col-span-1 order-1 md:order-2 flex items-center justify-center pt-[4rem] md:pt-[2rem]">
           <Image src="/contact.gif" width={500} height={500} alt="img" />
         </div>
       </div>
