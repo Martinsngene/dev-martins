@@ -2,7 +2,7 @@ import Image from "next/image";
 import CustomLink from "./CustomLink";
 import { BsArrowRight } from "react-icons/bs";
 
-const Card2 = ({ children, src, buttonLabel, link, dateTime }) => {
+const Card2 = ({ children, src, buttonLabel, link, dateTime, id }) => {
   return (
     <div className="bg-[#fff] p-2 hover:shadow-2xl border border-[#e3e3e3] w-[200px] md:w-[300px]">
       <div>
@@ -13,7 +13,7 @@ const Card2 = ({ children, src, buttonLabel, link, dateTime }) => {
       </div>
       <div className="cardBtnContainer my-1 mx-1 flex items-center justify-between text-[0.8rem]">
         <CustomLink
-          href={link}
+          href={`/posts/${id}`}
           textStyle="text-[#123384] font-[600] flex w-full items-center justify-between"
           className="w-[25%] cursor-pointer"
         >

@@ -9,6 +9,7 @@ const DisplayCardTemplate = ({
   buttonLabel,
   link,
   time,
+  id,
 }) => {
   return (
     <div className="w-[60%] md:w-full bg-[#C2B7E1] mx-auto md:mx-0 flex flex-col md:flex-row justify-center items-center my-[3rem]">
@@ -22,7 +23,7 @@ const DisplayCardTemplate = ({
 
         <div className="cardBtnContainer my-[2rem] mx-1 flex items-center justify-between">
           <CustomLink
-            href={link}
+            href={`/posts/${id}`}
             textStyle="text-[#123384] font-[600] flex w-full items-center justify-between"
             className="w-[10%] cursor-pointer"
           >

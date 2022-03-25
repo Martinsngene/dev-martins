@@ -38,6 +38,7 @@ const CardContainer = (props) => {
             src={item.url}
             buttonLabel={item.buttonLabel}
             dateTime={item.dateTime}
+            link={item.link}
           >
             {item.description}
           </Card>

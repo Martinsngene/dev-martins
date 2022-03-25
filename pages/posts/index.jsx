@@ -3,6 +3,7 @@ import Layout from "../../components/Layout";
 import InputSearch from "../../components/InputSearch";
 import { CardMockData2 } from "../../components/mock/CardMock";
 import { BsInfoCircle } from "react-icons/bs";
+import { v4 as uuid } from "uuid";
 
 const index = () => {
   return (
@@ -27,11 +28,12 @@ const index = () => {
             {CardMockData2.map((item, index) => (
               <Card2
                 href={item.href}
-                key={index}
+                key={uuid()}
                 src={item.url}
                 buttonLabel={item.buttonLabel}
                 dateTime={item.dateTime}
                 link={item.link}
+                id={uuid()}
               >
                 {item.description}
               </Card2>

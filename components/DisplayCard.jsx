@@ -1,4 +1,5 @@
 import DisplayCardTemplate from "./DisplayCardTemplate";
+import { v4 as uuid } from "uuid";
 
 const DisplayCard = () => {
   return (
@@ -14,6 +15,7 @@ const DisplayCard = () => {
         link="/"
         buttonLabel="Read"
         time="Mar 1, 2022"
+        id={uuid()}
       >
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, maiores,
         veritatis officia et provident officiis reiciendis assumenda itaque
