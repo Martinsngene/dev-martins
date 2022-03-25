@@ -38,7 +38,7 @@ const PostById = () => {
               </div>
               <div>
                 <div className="mb-[3rem] mx-auto">
-                  <p className="text-[1rem] font-[400]">
+                  <p className="text-[1rem] text-[#718096] font-[400]">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -58,7 +58,7 @@ const PostById = () => {
                   </p>
                 </div>
                 <div className="mb-[5rem] mx-auto">
-                  <p className="text-[1rem] font-[400]">
+                  <p className="text-[1rem] text-[#718096] font-[400]">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
