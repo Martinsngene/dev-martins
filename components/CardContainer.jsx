@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { BsArrowLeftSquare, BsArrowRightSquare } from "react-icons/bs";
 import Card from "./Card";
 import { CardMockData } from "./mock/CardMock";
+import { v4 as uuid } from "uuid";
 
 const CardContainer = (props) => {
   const ref = useRef();
@@ -38,7 +39,7 @@ const CardContainer = (props) => {
             src={item.url}
             buttonLabel={item.buttonLabel}
             dateTime={item.dateTime}
-            link={item.link}
+            link={uuid()}
           >
             {item.description}
           </Card>
