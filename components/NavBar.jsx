@@ -12,10 +12,10 @@ const Navbar = () => {
   return (
     <div>
       <div className="hidden md:block">
-        <div className="bg-[#fff] h-[4.5rem] fixed z-10 w-[100%] flex items-center justify-between px-[2rem] shadow-xl">
+        <div className="bg-[#fff] h-[6.5rem] fixed z-10 w-[100%] flex items-center justify-between px-[2rem] shadow-xl">
           <Link href={"/"} passHref={true}>
-            <div className="logo flex items-center justify-center bg-[#C2B7E1] w-[60px] h-[55px] rounded-md">
-              <Image src={MartinsLogo} width={50} height={25} alt="" />
+            <div className="logo flex items-center justify-center w-[80px] h-[800px]">
+              <Image src={MartinsLogo} width={80} height={80} alt="" />
             </div>
           </Link>
 
@@ -35,8 +35,8 @@ const Navbar = () => {
       </div>
       <div className="md:hidden bg-[#fff] h-[4rem] fixed z-10 w-[100%] flex items-center justify-between px-[1rem] shadow-xl">
         <Link href={"/"} passHref={true}>
-          <div className="logo flex items-center justify-center bg-[#C2B7E1] w-[50px] h-[45px] rounded-md">
-            <Image src={MartinsLogo} width={40} height={20} alt="" />
+          <div className="logo flex items-center justify-center w-[50px] h-[50px]">
+            <Image src={MartinsLogo} width={50} height={50} alt="" />
           </div>
         </Link>
         <div>

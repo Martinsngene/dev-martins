@@ -46,9 +46,6 @@ const Footer = () => {
             <li className="mb-4 md:-mb-0">
               <Link href={"/"}>About</Link>
             </li>
-            <li className="mb-4 md:-mb-0">
-              <Link href={"/"}>Support</Link>
-            </li>
           </ul>
         </div>
       </div>

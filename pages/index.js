@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Layout>
       <HeroCarousel />
-      <DisplayCard />
+      {/* <DisplayCard /> */}
       <CardContainer postDate={"Recent Posts"} />
     </Layout>
   );

@@ -24,6 +24,11 @@ html {
   background: white;
 }
 
+/* Hero Section */
+.heroSection {
+  background: center center / cover no-repeat url("/hero.jpg");
+}
+
 /* Card Container */
 
 .outer {

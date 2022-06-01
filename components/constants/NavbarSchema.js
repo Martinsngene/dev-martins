@@ -15,8 +15,4 @@ export const NavbarSchemaData = [
     name: "About",
     route: "/about",
   },
-  {
-    name: "Support",
-    route: "/",
-  },
 ];
