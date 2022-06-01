@@ -1,11 +1,11 @@
 import Footer from "./Footer";
-import Navbar from "./Navbar";
+import NavBar from "./NavBar";
 
 const Layout = ({ children, className }) => {
   return (
     <div style={{ scrollBehavior: "smooth" }}>
       <div>
-        <Navbar />
+        <NavBar />
       </div>
       <div className={className}>{children}</div>
       <div>
